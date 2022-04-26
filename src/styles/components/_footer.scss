@@ -1,0 +1,32 @@
+.footer {
+  & h5 {
+    font-size: 16px;
+  }
+
+  & p {
+    font-size: 12px;
+  }
+
+  & img {
+    margin-right: 10px;
+  }
+
+  & svg {
+    margin-right: 10px;
+  }
+
+  & .input-group-text {
+    padding: 0;
+    border: none;
+  }
+
+  & .input-group .btn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}
+
+// .form-control {
+//   box-shadow: none;
+//   border-color: transparent;
+// }

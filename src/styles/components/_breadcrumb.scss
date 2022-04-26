@@ -1,0 +1,14 @@
+.breadcrumb.breadcrumb-item {
+  & * {
+    font-weight: bold;
+    text-decoration: none;
+  }
+  color: $secondary;
+  cursor: pointer;
+  &.active {
+    color: $primary !important;
+  }
+  &:hover {
+    color: $primary;
+  }
+}

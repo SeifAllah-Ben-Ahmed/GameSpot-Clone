@@ -1,0 +1,15 @@
+// main styles
+
+@import "./variables";
+@import "./base";
+
+@import "./components/scrollbar";
+@import "./components/burgerMenu";
+@import "./components/slider";
+@import "./components/breadcrumb";
+@import "./components/priceFiler";
+@import "./components/footer";
+
+// import bootstrap styles
+@import "bootstrap/scss/bootstrap.scss";
+@import "keen-slider/keen-slider.min.css";
