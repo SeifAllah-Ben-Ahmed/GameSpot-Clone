@@ -1,4 +1,10 @@
 @charset "UTF-8";
+h2, .h2 {
+  font-weight: 800;
+  padding: 15px;
+  margin: 0;
+}
+
 ul {
   list-style: none;
   padding-left: 0;
@@ -212,6 +218,20 @@ ul li {
 .arrow--right {
   left: auto;
   right: 10px;
+}
+
+.thumbnail .keen-slider__slide {
+  font-size: 30px;
+  margin-top: 10px;
+  height: 100px;
+}
+
+.thumbnail .keen-slider__slide {
+  cursor: pointer;
+}
+
+.thumbnail .keen-slider__slide.active {
+  border: 2px dashed #dc3545;
 }
 
 .breadcrumb.breadcrumb-item {
@@ -717,21 +737,16 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 }
 
 h1, .h1 {
-  font-size: calc(1.375rem + 1.5vw);
+  font-size: calc(1.275rem + 0.3vw);
 }
 @media (min-width: 1200px) {
   h1, .h1 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
 }
 
 h2, .h2 {
-  font-size: calc(1.325rem + 0.9vw);
-}
-@media (min-width: 1200px) {
-  h2, .h2 {
-    font-size: 2rem;
-  }
+  font-size: 1.25rem;
 }
 
 h3, .h3 {
@@ -8991,11 +9006,11 @@ textarea.form-control-lg {
 }
 
 .fs-1 {
-  font-size: calc(1.375rem + 1.5vw) !important;
+  font-size: calc(1.275rem + 0.3vw) !important;
 }
 
 .fs-2 {
-  font-size: calc(1.325rem + 0.9vw) !important;
+  font-size: 1.25rem !important;
 }
 
 .fs-3 {
@@ -13005,11 +13020,7 @@ textarea.form-control-lg {
 }
 @media (min-width: 1200px) {
   .fs-1 {
-    font-size: 2.5rem !important;
-  }
-
-  .fs-2 {
-    font-size: 2rem !important;
+    font-size: 1.5rem !important;
   }
 
   .fs-3 {

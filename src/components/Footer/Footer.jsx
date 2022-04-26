@@ -12,7 +12,7 @@ import { BsFacebook, BsTwitter, BsInstagram, BsYoutube } from "react-icons/bs";
 const Footer = ({ data }) => {
   return (
     <Container>
-      <Row className="mt-5 px-3 footer">
+      <Row className="mt-5 p-3 footer">
         {data.map((item, i) => (
           <Col xs={6} md={3} key={i}>
             <h5>

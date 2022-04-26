@@ -1,10 +1,10 @@
 import React, { useContext, useState } from "react";
 import { Offcanvas, Button } from "react-bootstrap";
-
+import SubMenu from "./SubMenu";
 import { BsChevronLeft, BsList } from "react-icons/bs";
 import { menuContext } from "../../context/MenuContext";
+
 import Category from "../../data/Categories";
-import SubMenu from "./SubMenu";
 
 const BurgerMenu = () => {
   const [show, setShow] = useState(false);
@@ -43,18 +43,7 @@ const BurgerMenu = () => {
           )}
         </Offcanvas.Header>
         <Offcanvas.Body className="custom-scrollbar-css">
-          <h2
-            style={{
-              display: "block",
-              fontWeight: 800,
-              color: "#000",
-              padding: "15px",
-              fontSize: " 1.25rem",
-              margin: 0,
-            }}
-          >
-            Shop By Category
-          </h2>
+          <h2>Shop By Category</h2>
           <div className="custom-scrollbar-css">
             {Category.map((item, i) => (
               <SubMenu

@@ -31,18 +31,7 @@ const SubMenu = ({ title, subTitle, handleClose }) => {
             : "sub-menu custom-scrollbar-css"
         }
       >
-        <h2
-          style={{
-            display: "block",
-            fontWeight: 800,
-            color: "#000",
-            padding: "15px",
-            fontSize: " 1.25rem",
-            margin: 0,
-          }}
-        >
-          {title}
-        </h2>
+        <h2>{title}</h2>
         <ul className="p-0 m-0 pb-4">
           {subTitle &&
             subTitle.map((sub, i) => (

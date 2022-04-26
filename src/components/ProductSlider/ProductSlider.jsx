@@ -30,7 +30,7 @@ const ProductSlider = ({ products }) => {
 
   return (
     <>
-      <div className="navigation-wrapper m-y-3">
+      <div className="navigation-wrapper my-3">
         <div ref={sliderRef} className="keen-slider my-5">
           {products &&
             products.map((product, i) => (

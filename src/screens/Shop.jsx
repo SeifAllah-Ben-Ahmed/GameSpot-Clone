@@ -1,6 +1,6 @@
 import { Col, Container, Row } from "react-bootstrap";
 import ProductCard from "../components/ProductCard/ProductCard";
-import ShopNav from "../components/Breadcrumb";
+import Breadcrumb from "../components/Breadcrumb";
 import Sidebar from "../components/Sidebar";
 import Products from "../data/Products";
 
@@ -12,10 +12,10 @@ const Shop = () => {
   );
   console.log(res);
   return (
-    <div className="shop">
+    <main className="shop">
       <Container>
         <Row className="g-3 mb-2">
-          <ShopNav />
+          <Breadcrumb />
         </Row>
         <Row className="g-3  mb-5 mt-1 ">
           <Sidebar />
@@ -30,7 +30,7 @@ const Shop = () => {
           </Col>
         </Row>
       </Container>
-    </div>
+    </main>
   );
 };
 
