@@ -48,14 +48,14 @@ const ProductSlider = ({ products }) => {
               }
               disabled={currentSlide === 0}
             />
-
             <SliderArrow
               onClick={(e) =>
                 e.stopPropagation() || instanceRef.current?.next()
               }
               disabled={
                 currentSlide ===
-                instanceRef.current.track.details.slides.length - 5
+                instanceRef.current.track.details.slides.length -
+                  instanceRef.current.options.slides.perView
               }
             />
           </>
