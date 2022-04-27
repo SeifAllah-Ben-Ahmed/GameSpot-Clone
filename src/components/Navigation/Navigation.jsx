@@ -9,15 +9,10 @@ import {
   Button,
   Form,
 } from "react-bootstrap";
-import {
-  BsSearch,
-  BsBasket3Fill,
-  BsPerson,
-  BsHeart,
-  BsArrowClockwise,
-} from "react-icons/bs";
+import { BsSearch, BsPerson, BsHeart, BsArrowClockwise } from "react-icons/bs";
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
+import CartIcon from "../CartIcon";
 
 const Navigation = () => {
   const [search, setSearch] = useState("");
@@ -68,12 +63,14 @@ const Navigation = () => {
           <Col
             sm={6}
             lg={3}
-            className="d-flex justify-content-around flex-fill"
+            className="d-flex justify-content-around align-items-center flex-fill"
           >
             <BsArrowClockwise fontSize={24} />
+
             <BsHeart fontSize={24} />
             <BsPerson fontSize={24} />
-            <BsBasket3Fill fontSize={24} />
+            {/* <BsBasket3Fill fontSize={24} /> */}
+            <CartIcon fontSize={24} />
           </Col>
         </Navbar>
       </Row>

@@ -38,6 +38,100 @@ ul li {
   /* background-image: linear-gradient(to top, #8e0e00 0%, #1f1c18 100%); */
 }
 
+.shopping {
+  overflow: hidden;
+  height: 50px;
+  visibility: hidden;
+  -webkit-transition: all ease 0.33s;
+  transition: all ease 0.33s;
+  opacity: 0;
+  padding: 16px 8px;
+  width: 275px;
+  top: 100%;
+  right: 30px;
+}
+.shopping.show {
+  overflow: visible;
+  -webkit-transition: all ease 1s;
+  transition: all ease 1s;
+  visibility: visible;
+  opacity: 1;
+  height: 435px;
+}
+.shopping .d-grid {
+  background-color: #fff;
+}
+.shopping::before {
+  content: "";
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: -4px;
+  right: -1px;
+  background-color: #fff;
+  -webkit-transform: rotate(45deg) translate(-100%, 50%);
+          transform: rotate(45deg) translate(-100%, 50%);
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+  border-left: 1px solid rgba(0, 0, 0, 0.125);
+  z-index: 0;
+}
+.shopping .shopping_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.shopping .shopping_header small, .shopping .shopping_header .small {
+  color: #dc3545;
+}
+.shopping .productSection {
+  max-height: 305px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+.shopping .product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 5px;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.shopping .product::hover {
+  background-color: black;
+}
+.shopping .product .image {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #dc3545;
+  margin-right: 15px;
+}
+.shopping .product .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.shopping .product .price {
+  -ms-flex-item-align: end;
+      align-self: end;
+  justify-self: end;
+  color: #dc3545;
+}
+
 .offcanvas-body .nav-link {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -3,16 +3,26 @@ import { useKeenSlider } from "keen-slider/react";
 import SliderArrow from "./SliderArrow";
 import ProductCard from "../ProductCard";
 
-const ProductSlider = ({ products }) => {
+const animation = { duration: 10000, easing: (t) => t };
+
+const ProductSlider = ({ products, auto }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [loaded, setLoaded] = useState(false);
   const [sliderRef, instanceRef] = useKeenSlider({
+    loop: auto,
+    renderMode: "performance",
     initial: 0,
     slideChanged(slider) {
       setCurrentSlide(slider.track.details.rel);
     },
-    created() {
-      setLoaded(true);
+    created(s) {
+      auto ? s.moveToIdx(5, true, animation) : setLoaded(true);
+    },
+    updated(s) {
+      s.moveToIdx(s.track.details.abs + 5, true, animation);
+    },
+    animationEnded(s) {
+      s.moveToIdx(s.track.details.abs + 5, true, animation);
     },
     breakpoints: {
       "(max-width: 400px)": {
