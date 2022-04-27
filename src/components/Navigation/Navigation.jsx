@@ -70,6 +70,7 @@ const Navigation = () => {
             <BsHeart fontSize={24} />
             <BsPerson fontSize={24} />
             {/* <BsBasket3Fill fontSize={24} /> */}
+
             <CartIcon fontSize={24} />
           </Col>
         </Navbar>

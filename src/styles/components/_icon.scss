@@ -6,8 +6,8 @@
   opacity: 0;
   padding: 16px 8px;
   width: 275px;
-  top: 100%;
-  right: 30px;
+  top: 45px;
+  right: -20px;
 
   &.show {
     overflow: visible;
@@ -26,7 +26,7 @@
     width: 20px;
     position: absolute;
     top: -4px;
-    right: -1px;
+    right: 0;
     background-color: #fff;
     transform: rotate(45deg) translate(-100%, 50%);
     border-top: 1px solid rgba(0, 0, 0, 0.125);
